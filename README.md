@@ -83,16 +83,32 @@ LANGCHAIN_API_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ## Usage
 
 1. Start Jupyter Notebook:
+   In order to do that:
+   - Activate the environment:
+     In your terminal, activate the Conda environment that you want to use in Jupyter.
+```
+conda activate data_assistant
+```
+Install the necessary Jupyter dependencies:
+If you haven't yet installed IPython and the necessary Jupyter packages, install them by running:
+bash
+Copy Code
+conda install ipykernel
+Add your Conda environment as a Jupyter kernel:
+Now, you will add this environment to Jupyter so that it will appear as an option inside the notebook.
+bash
+Copy Code
+python -m ipykernel install --user --name=<your-env-name> --display-name "<Display Name>"
 
-2. Set YourDataName.csv in data_storage
+3. Set YourDataName.csv in data_storage
 
-3. Open the `main.ipynb` file.
+4. Open the `main.ipynb` file.
 
-4. Run all cells to initialize the system and create the workflow.
+5. Run all cells to initialize the system and create the workflow.
 
-5. In the last cell, you can customize the research task by modifying the `userInput` variable.
+6. In the last cell, you can customize the research task by modifying the `userInput` variable.
 
-6. Run the final few cells to execute the research process and view the results.
+7. Run the final few cells to execute the research process and view the results.
 
 ## Main Components
 
